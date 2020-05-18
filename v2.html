@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Touch screen tester:</title>
+    </head>
+    <body>
+        Use has used touch: <b id="usedTouch">no</b>
+    </body>
+
+    <script type="text/javascript">
+        window.addEventListener(
+            'touchstart',
+            function onFirstTouch() {
+                document.body.classList.add('touch');
+                document.getElementById('usedTouch').innerHTML = 'yes';
+                window.removeEventListener('touchstart', onFirstTouch, false);
+            },
+            false
+        );
+    </script>
+</html>
