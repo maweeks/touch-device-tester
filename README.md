@@ -1,2 +1,6 @@
 # touch-device-tester
-Test if device has a touch screen
+
+Test device touch screen
+
+- `index.html` - Test if device has a touch screen
+- `v2.html` - Test if user is using the touch screen
