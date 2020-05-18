@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Touch screen tester:</title>
+    </head>
+    <body>
+        Touch screen device: <b id="touchDevice"></b>
+    </body>
+    <script type="text/javascript">
+        let touchDevice = 'no';
+        if ('ontouchstart' in document.documentElement) {
+            touchDevice = 'yes';
+        }
+        console.log(touchDevice);
+        document.getElementById('touchDevice').innerHTML = touchDevice;
+    </script>
+</html>
